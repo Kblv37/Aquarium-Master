@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f8f9;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 8px;
+    font-size: 1em;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+}
+
+.search-container button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-left: 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #e67e22;
+}
+
+#catalog {
+    padding: 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#catalog h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #16a085;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    font-size: 1.2rem;
+    color: #16a085;
+}
+
+.filters select {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #1abc9c;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.filters select:hover {
+    background-color: #16a085;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    max-width: 300px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product h2 {
+    font-size: 1.4em;
+    margin: 15px 0;
+    color: #2c3e50;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #3498db;
+}
+
+footer {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us, .contact-info {
+    flex: 1;
+    min-width: 280px;
+    padding: 10px;
+}
+
+.contact-links {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    transform: scale(1.05);
+    border-bottom: 4px solid whitesmoke;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-bottom: 20px;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us, .contact-info {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

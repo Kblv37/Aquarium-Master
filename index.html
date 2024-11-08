@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин аксессуаров для аквариумов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Aquarium-Master</div>
+
+            <nav class="nav-links">
+                <a href="#home">Главная</a>
+                <a href="#products">Продукты</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Поиск...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section id="catalog">
+        <h1>Каталог аквариумов и аксессуаров</h1>
+        <div class="filters">
+            <label for="category">Категория:</label>
+            <select id="category" onchange="filterProducts()">
+                <option value="all">Все</option>
+                <option value="aquariums">Аквариумы</option>
+                <option value="accessories">Аксессуары</option>
+            </select>
+        </div>
+
+        <div class="products" id="products"></div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="about-us">
+                <h2>О нас</h2>
+                <p>Мы предоставляем качественные аксессуары и аквариумы, привезенные прямо из Китая, по лучшим ценам на
+                    рынке. Ваш аквариум станет уютным уголком для рыбы и растений!</p>
+            </div>
+
+            <div class="contact-info">
+                <h2>Контакты</h2>
+                <p>Телефон: <a href="tel:+998331321040" class="contact-links">+998 (33) 132 10 40</a></p>
+                <p>Email: <a href="mailto:kabilov.johongir@gmail.com" class="contact-links">kabilov.johongir@gmail.com</a></p>
+
+                <div class="social-links">
+                    <a href="https://instagram.com" target="tel" class="social-icon">Instagram</a>
+                    <a href="https://t.me" target="_blank" class="social-icon">Telegram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
