@@ -5,21 +5,21 @@ const products = [
         image: "pht1.jpg",
         material: "стекло",
         height: "30",
-        width: "30",
-        length: "30",
+        width: "15",
+        length: "15",
         price: "77 000",
         sku: "10001"
     },
     {
-        name: "Цилиндрический аквариум 5.2л",
+        name: "Цилиндрический аквариум 7л",
         category: "accessories",
         image: "pht1.jpg",
         material: "стекло",
-        height: "30",
-        width: "30",
-        length: "30",
-        price: "77 000",
-        sku: "10001"
+        height: "40",
+        width: "15",
+        length: "15",
+        price: "87 000",
+        sku: "10002"
     }
 ];
 
