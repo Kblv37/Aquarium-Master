@@ -1,0 +1,361 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik-Regular';
+    background-color: #f1f8f9;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 8px;
+    font-size: 1em;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+}
+
+.search-container button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-left: 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #e67e22;
+}
+
+.catalog-st {
+    padding: 10px;
+    background-color: #ecf0f1;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.catalog-st2 {
+    padding: 0;
+    margin: 0;
+}
+
+#catalog h1 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #16a085;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    font-size: 1.2rem;
+    color: #16a085;
+}
+
+.filters select {
+    padding: 10px 14px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #1abc9c;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.filters select:hover {
+    background-color: #16a085;
+}
+
+.products {
+    font-family: 'Rubik-SemiBold';
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.products2 {
+    font-family: 'Rubik-SemiBold';
+    margin: 0;
+    padding: 0;
+}
+
+.product {
+    font-family: 'Rubik-Regular';
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    max-width: 300px;
+}
+
+.product2 {
+    font-family: 'Rubik-Regular';
+    max-width: 700px;
+    width: 100%;
+    padding: 0 0 1rem 0;
+    background-color: white;
+    border: none;
+    margin: 0;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-img {
+    max-width: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.product-params {
+    margin: -10px auto;
+    width: 90%;
+    text-align: left;
+}
+
+.product-params h2 {
+    font-size: 1.4em;
+    margin: 15px 0;
+    color: #2c3e50;
+}
+
+.product-params-d {
+    margin: 13px 0 14px 5px;
+    display: none;
+}
+
+.product-params-d.active {
+    display: block;
+}
+
+.product-params-d p {
+    font-size: 1.2rem;
+    margin: 4px 0 3px 0;
+}
+
+footer {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us,
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+    padding: 5px;
+}
+
+.contact-links {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    transform: scale(1.05);
+    border-bottom: 4px solid whitesmoke;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 7px 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-bottom: 7px;
+    }
+
+    .search-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-container input {
+        width: 70%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us,
+    .contact-info {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .filters select {
+        max-width: 150px;
+        width: 100%;
+        padding: 8px 8px;
+        font-size: 1rem;
+        background-color: #1abc9c;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .filters select:hover {
+        background-color: #16a085;
+    }
+
+    .filters select::-ms-expand {
+        display: none;
+    }
+
+    .filters select:focus {
+        background-color: #16a085;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .filters select {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+.display {
+    display: none;
+}
+
+.product p img {
+    height: 16px;
+    width: 16px;
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    border-radius: 0;
+}
+
+.body-a {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    border-radius: 50%;
+}
+
+.body-a svg {
+    box-shadow: inset 0 40px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    color: white;
+}

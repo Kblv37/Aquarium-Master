@@ -1,0 +1,89 @@
+@font-face{
+    font-family:'Rubik-Regular';
+    src: url(inter/Rubik-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'Rubik-Medium';
+    src: url(inter/Rubik-Medium.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'Rubik-SemiBold';
+    src: url(inter/Rubik-SemiBold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'Inter-SemiBold';
+    src: url(inter/Inter-SemiBold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'dhur';
+    src: url(inter/dhur.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'PixelifySans-Bold';
+    src: url(inter/PixelifySans-Bold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'PixelifySans-Medium';
+    src: url(inter/PixelifySans-Medium.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'PixelifySans-Regular';
+    src: url(inter/PixelifySans-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'PixelifySans-SemiBold';
+    src: url(inter/PixelifySans-SemiBold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'PixelifySans-VariableFont_wght';
+    src: url(inter/PixelifySans-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'Manrope-Bold.ttf';
+    src: url(inter/Manrope-Bold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'Manrope-ExtraBold.ttf';
+    src: url(inter/Manrope-ExtraBold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'Manrope-ExtraLight.ttf';
+    src: url(inter/Manrope-ExtraLight.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'Manrope-Light.ttf';
+    src: url(inter/Manrope-Light.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'Manrope-Medium.ttf';
+    src: url(inter/Manrope-Medium.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'Manrope-Regular.ttf';
+    src: url(inter/Manrope-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'Manrope-SemiBold.ttf';
+    src: url(inter/Manrope-SemiBold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'PoiretOne-Regular.ttf';
+    src: url(inter/PoiretOne-Regular.ttf) format('truetype');
+}
