@@ -12,7 +12,7 @@ const products = [
     },
     {
         name: "Цилиндрический аквариум 5.2л",
-        category: "aquariums",
+        category: "accessories",
         image: "pht1.jpg",
         material: "стекло",
         height: "30",
@@ -20,36 +20,6 @@ const products = [
         length: "30",
         price: "77 000",
         sku: "10001"
-    },
-    {
-        name: "Цилиндрический аквариум 8.8л",
-        category: "aquariums",
-        image: "https://via.placeholder.com/300x200?text=Aquarium2",
-        price: "115 000"
-    },
-    {
-        name: "Светодиодная подсветка",
-        category: "accessories",
-        image: "https://via.placeholder.com/300x200?text=Light",
-        price: "800 ₽"
-    },
-    {
-        name: "Террариум для рыб",
-        category: "aquariums",
-        image: "https://via.placeholder.com/300x200?text=Aquarium3",
-        price: "4500 ₽"
-    },
-    {
-        name: "Корм для рыб",
-        category: "accessories",
-        image: "https://via.placeholder.com/300x200?text=Food",
-        price: "350 ₽"
-    },
-    {
-        name: "Корм для рыб",
-        category: "accessories",
-        image: "https://via.placeholder.com/300x200?text=Food",
-        price: "350 ₽"
     }
 ];
 
@@ -109,6 +79,8 @@ function displayProducts(productsToShow) {
                 <div class="product-params-d">
                     <p>Материал: ${product.material || 'Не указан'}</p>
                     <p>Высота: ${product.height ? product.height + ' см' : 'Не указана'}</p>
+                    <p>Высота: ${product.width ? product.width + ' см' : 'Не указана'}</p>
+                    <p>Высота: ${product.length ? product.length + ' см' : 'Не указана'}</p>
                     <p>${product.price} сум + карго</p>
                     <p>${product.sku || 'Нет SKU'} <img class="sku-copy" src="copy.svg" alt="copy text"></p>
                 </div>
