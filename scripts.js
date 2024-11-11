@@ -89,7 +89,7 @@ function displayProducts(productsToShow) {
             <div class="product-params">
                 <h2>${product.name}</h2>
                 <div class="product-params-d">
-                    <p>В комплекте: ${product.included || ' '}${product.name}</p>
+                    <p>В комплекте: ${product.included || ' '}${product.name}, </p>
                     <p>Материал: ${product.material || ' '}</p>
                     <p>Высота: ${product.height ? product.height + ' см' : ' '}</p>
                     <p>Длина: ${product.width ? product.width + ' см' : ' '}</p>
