@@ -34,6 +34,102 @@ const products = [
         length: "15",
         price: "115 000",
         sku: "10003"
+    },
+    {
+        name: "Цилиндрический аквариум 6.2л",
+        category: "aquariums",
+        image: "pht1.jpg",
+        included: "",
+        material: "стекло",
+        height: "20",
+        width: "20",
+        length: "20",
+        price: "85 000",
+        sku: "10004"
+    },
+    {
+        name: "Цилиндрический аквариум 9.4л",
+        category: "aquariums",
+        image: "pht1.jpg",
+        included: "",
+        material: "стекло",
+        height: "30",
+        width: "20",
+        length: "20",
+        price: "115 000",
+        sku: "10005"
+    },
+    {
+        name: "Цилиндрический аквариум 12.5л",
+        category: "aquariums",
+        image: "pht1.jpg",
+        included: "",
+        material: "стекло",
+        height: "40",
+        width: "20",
+        length: "20",
+        price: "136 000",
+        sku: "10006"
+    },
+    {
+        name: "Цилиндрический аквариум 15.7л",
+        category: "aquariums",
+        image: "pht1.jpg",
+        included: "",
+        material: "стекло",
+        height: "50",
+        width: "20",
+        length: "20",
+        price: "153 000",
+        sku: "10007"
+    },
+    {
+        name: "Цилиндрический аквариум 12.7л",
+        category: "aquariums",
+        image: "pht1.jpg",
+        included: "",
+        material: "стекло",
+        height: "25",
+        width: "25",
+        length: "25",
+        price: "146 000",
+        sku: "10008"
+    },
+    {
+        name: "Цилиндрический аквариум 14.7л",
+        category: "aquariums",
+        image: "pht1.jpg",
+        included: "",
+        material: "стекло",
+        height: "30",
+        width: "25",
+        length: "25",
+        price: "182 000",
+        sku: "10009"
+    },
+    {
+        name: "Цилиндрический аквариум 19.6л",
+        category: "aquariums",
+        image: "pht1.jpg",
+        included: "",
+        material: "стекло",
+        height: "40",
+        width: "25",
+        length: "25",
+        price: "251 000",
+        sku: "10010"
+    },
+    {
+        name: "Цилиндрический аквариум 24.5л",
+        category: "aquariums",
+        image: "pht1.jpg",
+        included: "",
+        material: "стекло",
+        height: "50",
+        width: "25",
+        length: "25",
+        price: "325 000",
+        sku: "10011"
     }
 ];
 
