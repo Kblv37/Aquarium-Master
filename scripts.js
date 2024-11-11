@@ -130,6 +130,30 @@ const products = [
         length: "25",
         price: "325 000",
         sku: "10011"
+    },
+    {
+        name: "Цилиндрический аквариум 21л, д-30см",
+        category: "aquariums",
+        image: "pht1.jpg",
+        included: "",
+        material: "стекло",
+        height: "30",
+        width: "30",
+        length: "30",
+        price: "325 000",
+        sku: "10012"
+    },
+    {
+        name: "Цилиндрический аквариум 28л, д-30см",
+        category: "aquariums",
+        image: "pht1.jpg",
+        included: "",
+        material: "стекло",
+        height: "40",
+        width: "30",
+        length: "30",
+        price: "415 000",
+        sku: "10013"
     }
 ];
 
