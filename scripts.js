@@ -3,6 +3,7 @@ const products = [
         name: "Цилиндрический аквариум 5.2л",
         category: "aquariums",
         image: "pht1.jpg",
+        included: "",
         material: "стекло",
         height: "30",
         width: "15",
@@ -14,6 +15,7 @@ const products = [
         name: "Цилиндрический аквариум 7л",
         category: "aquariums",
         image: "pht1.jpg",
+        included: "",
         material: "стекло",
         height: "40",
         width: "15",
@@ -25,6 +27,7 @@ const products = [
         name: "Цилиндрический аквариум 8.8л",
         category: "aquariums",
         image: "pht1.jpg",
+        included: "",
         material: "стекло",
         height: "50",
         width: "15",
@@ -53,10 +56,8 @@ function noneDisplayed() {
 function changedStyles(productElement) {
     const productParamsElement = productElement.querySelector('.product-params-d');
     
-    // Скрыть параметры для всех товаров
     document.querySelectorAll('.product-params-d').forEach(param => param.classList.remove('active'));
 
-    // Показать параметры для текущего товара
     if (productParamsElement) {
         productParamsElement.classList.add('active');
     }
@@ -79,7 +80,7 @@ function changedStyles(productElement) {
 }
 
 function displayProducts(productsToShow) {
-    productContainer.innerHTML = ''; // Убедитесь, что это правильно
+    productContainer.innerHTML = '';
     productsToShow.forEach((product, index) => {
         const productElement = document.createElement('div');
         productElement.classList.add('product');
@@ -88,10 +89,11 @@ function displayProducts(productsToShow) {
             <div class="product-params">
                 <h2>${product.name}</h2>
                 <div class="product-params-d">
-                    <p>Материал: ${product.material || 'Не указан'}</p>
-                    <p>Высота: ${product.height ? product.height + ' см' : 'Не указана'}</p>
-                    <p>Высота: ${product.width ? product.width + ' см' : 'Не указана'}</p>
-                    <p>Высота: ${product.length ? product.length + ' см' : 'Не указана'}</p>
+                    <p>В комплекте: ${product.included || ' '}</p>
+                    <p>Материал: ${product.material || ' '}</p>
+                    <p>Высота: ${product.height ? product.height + ' см' : ' '}</p>
+                    <p>Длина: ${product.width ? product.width + ' см' : ' '}</p>
+                    <p>Ширина: ${product.length ? product.length + ' см' : ' '}</p>
                     <p>${product.price} сум + карго</p>
                     <p>${product.sku || 'Нет SKU'} <img class="sku-copy" src="copy.svg" alt="copy text"></p>
                 </div>
@@ -101,21 +103,17 @@ function displayProducts(productsToShow) {
         productElement.addEventListener('click', () => {
             const allProducts = document.querySelectorAll('.product');
             
-            // Скрыть все товары, кроме выбранного
             allProducts.forEach(productItem => {
                 if (productItem !== productElement) {
                     productItem.style.display = 'none';
                 }
             });
 
-            // Устанавливаем id для текущего товара (не обязательно, можно использовать классы)
             productElement.id = 'product';
 
-            // Применяем изменения стилей
             noneDisplayed();
             changedStyles(productElement);
 
-            // Показать параметры для выбранного товара
             const productParamsElement = productElement.querySelector('.product-params-d');
             if (productParamsElement) {
                 productParamsElement.classList.add('active');
