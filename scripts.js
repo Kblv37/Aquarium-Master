@@ -1,6 +1,6 @@
 const products = [
     {
-        name: "Цилиндрический аквариум 5.2л",
+        name: "Цилиндрический аквариум 5.2л, д-15см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
@@ -12,7 +12,7 @@ const products = [
         sku: "10001"
     },
     {
-        name: "Цилиндрический аквариум 7л",
+        name: "Цилиндрический аквариум 7л, д-15см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
@@ -24,7 +24,7 @@ const products = [
         sku: "10002"
     },
     {
-        name: "Цилиндрический аквариум 8.8л",
+        name: "Цилиндрический аквариум 8.8л, д-15см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
@@ -36,7 +36,7 @@ const products = [
         sku: "10003"
     },
     {
-        name: "Цилиндрический аквариум 6.2л",
+        name: "Цилиндрический аквариум 6.2л,д-20см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
@@ -48,7 +48,7 @@ const products = [
         sku: "10004"
     },
     {
-        name: "Цилиндрический аквариум 9.4л",
+        name: "Цилиндрический аквариум 9.4л, д-20см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
@@ -60,7 +60,7 @@ const products = [
         sku: "10005"
     },
     {
-        name: "Цилиндрический аквариум 12.5л",
+        name: "Цилиндрический аквариум 12.5л, д-20см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
@@ -72,7 +72,7 @@ const products = [
         sku: "10006"
     },
     {
-        name: "Цилиндрический аквариум 15.7л",
+        name: "Цилиндрический аквариум 15.7л, д-20см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
@@ -84,7 +84,7 @@ const products = [
         sku: "10007"
     },
     {
-        name: "Цилиндрический аквариум 12.7л",
+        name: "Цилиндрический аквариум 12.7л, д-25см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
@@ -96,7 +96,7 @@ const products = [
         sku: "10008"
     },
     {
-        name: "Цилиндрический аквариум 14.7л",
+        name: "Цилиндрический аквариум 14.7л, д-25см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
@@ -108,7 +108,7 @@ const products = [
         sku: "10009"
     },
     {
-        name: "Цилиндрический аквариум 19.6л",
+        name: "Цилиндрический аквариум 19.6л, д-25см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
@@ -120,7 +120,7 @@ const products = [
         sku: "10010"
     },
     {
-        name: "Цилиндрический аквариум 24.5л",
+        name: "Цилиндрический аквариум 24.5л, д-25см",
         category: "aquariums",
         image: "pht1.jpg",
         included: "",
