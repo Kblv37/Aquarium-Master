@@ -3,6 +3,9 @@ const products = [
         name: "Цилиндрический аквариум 5.2л, д-15см",
         category: "aquariums",
         image: "pht1.jpg",
+        image1: "pht1.jpg",
+        image2: "pht1.jpg",
+        image3: "pht1.jpg",
         included: "",
         material: "стекло",
         height: "30",
@@ -206,6 +209,9 @@ function displayProducts(productsToShow) {
         productElement.classList.add('product');
         productElement.innerHTML = `
             <img class="product-img" src="${product.image}" alt="${product.name}">
+            <img class="product-img" src="${product.image1 || ''}" alt="${product.name}">
+            <img class="product-img" src="${product.image2 || ''}" alt="${product.name}">
+            <img class="product-img" src="${product.image3 || ''}" alt="${product.name}">
             <div class="product-params">
                 <h2>${product.name}</h2>
                 <div class="product-params-d">
