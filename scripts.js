@@ -3,6 +3,7 @@ const products = [
         name: "Цилиндрический аквариум 5.2л, д-15см",
         category: "aquariums",
         image: "pht1.jpg",
+        image: "pht1.jpg",
         included: "",
         material: "стекло",
         height: "30",
