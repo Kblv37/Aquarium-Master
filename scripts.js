@@ -168,18 +168,17 @@ const products = [
         sku: "40001"
     },
     {
-        name: 'Лампа для аквариума';
-        category: 'accessories';
-        image: '40002.png';
-        image2: '40002_2.png';
-        image3: '40002_3.png';
-        image4: '';
-        included: '';
-        xarak: 'Мощность: 7 Вт. <br>Цвета лампы: белый, тёплый; белый, синий; белый, зелёный. <br>Цветовая темп: 8 000 - 10 000 К.';
-        price: '36 000';
-        sku: '40002';
+        name: 'Лампа для аквариума',
+        category: 'accessories',
+        image: '40002.png',
+        image2: '40002_2.png',
+        image3: '40002_3.png',
+        image4: '',
+        included: '',
+        xarak: 'Мощность: 7 Вт. <br>Цвета лампы: белый, тёплый; белый, синий; белый, зелёный. <br>Цветовая темп: 8 000 - 10 000 К.',
+        price: '36 000',
+        sku: '40002',
     }
-
 ];
 
 const productContainer = document.getElementById('products');
